@@ -1,0 +1,84 @@
+
+
+main {
+    background: linear-gradient(#565555, #0f0f10);
+    padding: 3rem 0;
+    position: relative;
+}
+
+.feature .content {
+    position: relative;
+    bottom: 2.5rem; 
+}
+
+.feature {
+    margin-bottom: 4rem 0;
+    padding: 1rem;
+
+}
+
+.feature h1{
+    font-size: clamp (1rem, 10vw, 2.5rem);
+    color: white;
+    font-family: 'Orbitron';
+}
+
+.feature h2 {
+    color: rgb(218, 224, 21);
+    font-size: clamp (0.5rem, 10vw, 1.5rem);
+}
+
+
+.feature h3{
+    font-size: clamp (0,5rem, 10vw, 1.5rem);
+}
+
+.order{
+    
+    margin-top: 1rem;
+    padding: 3rem;
+    background: linear-gradient(150deg, grey, yellow);
+    /* border: 0.15rem solid black; */
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+
+
+}
+
+
+@media screen and (min-width: 810px) {
+
+    .feature {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+
+        margin-bottom: 10rem 0;
+        padding: 1rem 0;
+
+        font-size: clamp (1rem, 10vw, 1.5rem);
+
+        border-right: 0.75rem solid yellow;
+        border-radius: 0.5rem;
+    }
+
+    .feature:nth-child(even) {
+        flex-direction: row-reverse;
+        border-left: 0.75rem solid yellow;
+        border-right: none;
+    }
+
+    .feature figure{
+        flex: 1;
+    }
+    
+    .feature .content{
+        flex: 1;
+        position: static;
+        padding: 2rem;
+    }
+
+    
+      
+}

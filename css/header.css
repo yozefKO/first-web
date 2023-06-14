@@ -1,0 +1,76 @@
+header{
+    min-height: 100vh;
+    background-image: url('../img/electrician-gad15f9393_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: 
+        polygon(
+            0 0,
+            100% 0%, 
+            100% 80%, 
+            100% 100%, 
+            0 80%
+            );
+    position:static;
+   
+}
+
+
+
+@media screen and (min-width: 300px) {
+
+header {
+    background-position: 50% 50%;
+    display: grid;
+    place-items: center;
+    min-height: 100vw;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    justify-items: center;
+    
+
+}
+
+.main-nav {
+    width: 100vw;
+    background: rgba(0, 0 , 0, 5);
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    z-index: 2;
+
+}
+
+.main-nav .menu{
+    font-family: 'Bebas Neue';
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    line-height: 1;
+    
+    display: flex;
+    gap: 2rem;
+
+    background: rgb(45, 45, 54);
+}
+
+.main-nav a {
+    display: block;
+    padding-top: 0.7rem;
+    padding-top: 0.35rem;
+}
+
+.animate__backInDown {
+    display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: backInDown; 
+  animation-duration: 5s; 
+
+}
+}
+    
